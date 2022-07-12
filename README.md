@@ -16,7 +16,7 @@ Flutter plugin for Intercom made with the use case for Hudle Organization.
     final _intercomFlutterPlugin = IntercomFlutter();
 ```
 
-##Methods
+## Methods
 
 1. Initialize
 ```dart
@@ -47,7 +47,27 @@ _intercomFlutterPlugin.logout();
 ```
 
 
-##Platform
+## Platform
 
 ``Ios``
 ``Android``
+
+
+## IOS Installation
+
+Make sure that you have a NSPhotoLibraryUsageDescription entry in your Info.plist.
+
+``<key>NSPhotoLibraryUsageDescription</key>
+<true/>``
+
+
+## Android Installtion
+
+<b>Required Permission</b>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+<b>Optional Permissions</b>
+        
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
